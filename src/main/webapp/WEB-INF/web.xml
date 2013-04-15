@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	
+	<servlet>
+		<servlet-name>ProjektServlet</servlet-name>
+		<display-name>ProjektServlet</display-name>
+		<description>Projekt Entry Point</description>
+		<servlet-class>br.com.itexto.projekt.web.ProjektServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjektServlet</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+ 	<!-- 
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+ -->
+</web-app>
