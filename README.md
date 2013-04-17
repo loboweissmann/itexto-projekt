@@ -14,3 +14,5 @@ Ainda em desenvolvimento, vai trazer o desenvolvimento web como seu autor sempre
 * Ágil
 * Divertido
 * Enriquecedor
+
+Post de lançamento: http://www.itexto.net/devkico/?p=1365 (com vídeo!)
