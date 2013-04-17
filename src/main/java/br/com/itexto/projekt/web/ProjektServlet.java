@@ -85,14 +85,6 @@ public class ProjektServlet extends HttpServlet {
 		}
 		
 		viewResolver.resolve(request, response, requestInfo, model);
-		/*
-		BufferedWriter bw = new BufferedWriter(response.getWriter());
-		
-		bw.write("controller: " + requestInfo.getControllerName());
-		bw.write("\naction: " + requestInfo.getActionName());
-		bw.write("\nparameters: " + requestInfo.getParameters());
-		bw.write("\nmodel: " + model);
-		bw.flush();*/
 	}
 
 }

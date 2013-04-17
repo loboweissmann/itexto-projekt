@@ -5,7 +5,7 @@
  )
 
 (defn kico [request]
-    (hash-map "tipo" "Kico!")  
+    (hash-map "tipo" "Coisa!")  
 )
 
 (defn fat [x]
@@ -16,4 +16,3 @@
        (hash-map "resultado" (fat (Integer. (. request parameter "x"))) 
                   "x" (. request parameter "x"))
 )
-
