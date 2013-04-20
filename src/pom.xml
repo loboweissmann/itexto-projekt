@@ -1,0 +1,10 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.itexto.daftlisp</groupId>
+	<artifactId>daft-lisp</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>daft-lisp-core</module>
+	</modules>
+</project>

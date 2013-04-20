@@ -1,0 +1,4 @@
+Daft Lisp Core
+
+The core of the Daft Lisp framework
+Here you'll find our main servlet, integration with Java EE and everything that make this thing work.
