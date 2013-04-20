@@ -6,4 +6,4 @@ target/*
 .settings/*
 src/daft-lisp-core/target/*
 src/daft-lisp-cli/target/*
-
+src/daft-lisp-core/.settings/*
