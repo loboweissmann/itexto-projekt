@@ -1,0 +1,7 @@
+(println "In need of some help?")
+(println "Daft Lisp Commands")
+(println "==================")
+(println "create-app = Creates a new application")
+(println "create-controller = Creates a new controller on your application")
+(println "run = Start your application on the development environment")
+(println "\n")
