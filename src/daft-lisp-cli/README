@@ -1,0 +1,4 @@
+Daft Lisp CLI
+
+Here is the code of the command line interface of the Daft Lisp framework.
+Our building system (still really rudimentary) is implemented here too.
