@@ -4,3 +4,6 @@ target/*
 .project
 .classpath
 .settings/*
+src/daft-lisp-core/target/*
+src/daft-lisp-cli/target/*
+
