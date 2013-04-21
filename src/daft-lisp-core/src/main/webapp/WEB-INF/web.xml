@@ -6,13 +6,13 @@
 	<display-name>Archetype Created Web Application</display-name>
 	
 	<servlet>
-		<servlet-name>ProjektServlet</servlet-name>
-		<display-name>ProjektServlet</display-name>
-		<description>Projekt Entry Point</description>
-		<servlet-class>br.com.itexto.projekt.web.ProjektServlet</servlet-class>
+		<servlet-name>DaftServlet</servlet-name>
+		<display-name>DaftServlet</display-name>
+		<description>Daft Lisp Entry Point</description>
+		<servlet-class>br.com.itexto.daftlisp.web.DaftServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ProjektServlet</servlet-name>
+		<servlet-name>DaftServlet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
  	
