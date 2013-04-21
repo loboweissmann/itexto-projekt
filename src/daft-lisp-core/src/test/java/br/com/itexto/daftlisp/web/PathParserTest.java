@@ -38,6 +38,20 @@ public class PathParserTest {
 				return map;
 			}
 		});
+		Mockito.when(mock.getParameter("parameter1")).thenAnswer(new Answer<String>() {
+			@Override
+			public String answer(InvocationOnMock invocation) throws Throwable {
+				return "value1";
+			}
+			
+		});
+		Mockito.when(mock.getParameter("parameter2")).thenAnswer(new Answer<String>() {
+			@Override
+			public String answer(InvocationOnMock invocation) throws Throwable {
+				return "value2";
+			}
+			
+		});
 		
 		Request request = parser.parse(mock);
 		assertNotNull(request);

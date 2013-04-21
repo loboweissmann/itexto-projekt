@@ -12,9 +12,8 @@ import clojure.lang.Var;
 public class ControllerLoader {
 	
 	private final Map<String, Object> empty = new HashMap<String, Object>();
-	private ServletContext servletContext;
 	
-	public void setServletContext(ServletContext ctx) {servletContext = ctx;}
+	
 	
 	private Set<String> loadedControllers = new HashSet<String>();
 	

@@ -31,7 +31,7 @@ public class DaftServlet extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
 		viewResolver.init(getServletContext(), getServletConfig());
-		controllerLoader.setServletContext(getServletContext());
+		
 		
 	}
 
