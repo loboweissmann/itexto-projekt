@@ -3,9 +3,17 @@
 (defn in-app-directory? []
 	(. (new java.io.File (str (. System getProperty "user.dir") "/daftlisp.properties")) exists))
 
+(defn controller-file-name[] 
+	(str (. System getProperty "user.dir") "/daft-app/controllers/" (second *command-line-args*) ".clj")
+)
+
 (defn create-controller []
-	(with-open [wtr (writer (str (. System getProperty "user.dir") "/daft-app/controllers/" (second *command-line-args*) ".clj"))]
-		(.write wtr (str "(ns " (second *command-line-args*) ")\n")))
+	(do
+		(println "Creating controller")
+		(with-open [wtr (writer (controller-file-name))]
+			(.write wtr (str "(ns " (second *command-line-args*) ")\n")))
+		(println (str "File " (controller-file-name) " created. :)"))
+	)
 )
 
 (if (not (in-app-directory?))

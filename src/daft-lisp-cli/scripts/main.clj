@@ -1,5 +1,7 @@
 (ns daftlisp-cli)
 
+(load-file (str (. System getenv "DAFT_LISP_HOME") "/scripts/script-utils.clj") )
+
 (println "\n\nWelcome to Daft Lisp - v 0.1")
 (println "Author: Henrique Lobo Weissmann - @loboweissmann - http://devkico.itexto.com.br")
 (println "itexto Ltd. - http://www.itexto.com.br")
@@ -27,4 +29,7 @@
 ))
 
 
+(def init-time (. System currentTimeMillis))
 (run-script (first *command-line-args*) (rest *command-line-args*))
+(def end-time (. System currentTimeMillis))
+(println (str "Time: " (- end-time init-time) " milliseconds"))

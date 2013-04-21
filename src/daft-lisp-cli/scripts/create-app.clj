@@ -16,8 +16,10 @@
 	(let [meta-file (new java.io.File (str (app-dir) "/daftlisp.properties"))
 	      properties (new java.util.Properties)]
 		(do
+		   (. properties setProperty "app.name" (second *command-line-args*))
 		   (. properties setProperty "app.version" "0.1")
 		   (. properties setProperty "daftlisp.version" "0.1")
+
 		   (. properties store (new java.io.FileOutputStream meta-file) "Daft Lisp metadata")
 		)
 ))
