@@ -52,3 +52,7 @@
 	(new java.io.File (str (get-property "user.home") "/.daftlisp/0.1/" (app-property "app.name")))
 )
 
+; pre-process the command line arguments to avoid errors with the \r escapa character on some platforms (I'm pointing to you Ubuntu!)
+(defn command-line-args []
+	(map (fn [x] (. x replaceAll "\r" "")) *command-line-args*)
+)
