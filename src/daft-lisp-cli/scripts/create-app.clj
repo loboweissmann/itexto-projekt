@@ -1,13 +1,17 @@
 (ns create-app)
 
+(defn app-name-args []
+	(. (second *command-line-args*) replaceAll "\r" "")
+)
+
 (defn app-dir []
-	(str (. System getProperty "user.dir") "/" (second *command-line-args*)))
+	(str (. System getProperty "user.dir") "/" (app-name-args)))
 
 
 
 (defn create-folder [name]
 	(do
-		(println (str "Creating folder" name))
+		(println (str "Creating folder " name))
 		(. (new java.io.File (str (app-dir) "/" name)) mkdirs)
 	)
 )
@@ -16,7 +20,7 @@
 	(let [meta-file (new java.io.File (str (app-dir) "/daftlisp.properties"))
 	      properties (new java.util.Properties)]
 		(do
-		   (. properties setProperty "app.name" (second *command-line-args*))
+		   (. properties setProperty "app.name" (app-name-args))
 		   (. properties setProperty "app.version" "0.1")
 		   (. properties setProperty "daftlisp.version" "0.1")
 
